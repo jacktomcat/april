@@ -1,0 +1,10 @@
+server:
+  port: 8010
+
+eureka:
+  instance:
+    appname: april-business
+    hostname: MacBook-Pro.local
+  client:
+    service-url:
+      defaultZone: http://MacBook-Pro.local:8001/eureka/
