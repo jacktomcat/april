@@ -6,7 +6,12 @@
 
     <groupId>com.chsoft.aggr</groupId>
     <artifactId>april</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>april-eureka</module>
+        <module>april-business</module>
+    </modules>
 
 
 </project>
