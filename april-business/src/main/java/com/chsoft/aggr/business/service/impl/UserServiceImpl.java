@@ -1,10 +1,25 @@
 package com.chsoft.aggr.business.service.impl;
 
+import com.chsoft.aggr.business.dao.UserDao;
+import com.chsoft.aggr.business.entity.User;
+import com.chsoft.aggr.business.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 /**
  * ${DESCRIPTION}
  *
  * @auhtor jacktomcat
  * @create 2018-08-14 下午10:37
  */
-public class UserServiceImpl {
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Autowired
+    private UserDao userDao;
+
+    public User getUserById(int id) {
+        return userDao.getUserById(id);
+    }
 }
