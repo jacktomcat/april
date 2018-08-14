@@ -16,7 +16,6 @@ public class BusinessBootstrap {
 
     public static void main(String[] args) {
         SpringApplication.run(BusinessBootstrap.class, args);
-        //new SpringApplicationBuilder().main(BusinessBootstrap.class).web(WebApplicationType.SERVLET).run(args);
     }
 
 }
