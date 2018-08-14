@@ -1,10 +1,18 @@
 server:
   port: 8010
 
+
+spring:
+  application:
+    name: april-business
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
-spring:
-  application:
-    name: april-business
+
+#logging:
+#  level:
+#    com.netflix : debug
+#    org.springframework: debug
+
