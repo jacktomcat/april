@@ -1,0 +1,17 @@
+server:
+  port: 8012
+
+
+spring:
+  application:
+    name: april-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+logging:
+  level:
+    com.chsoft.aggr.gateway : debug
+

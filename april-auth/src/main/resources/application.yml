@@ -1,0 +1,26 @@
+server:
+  port: 8011
+
+
+spring:
+  application:
+    name: april-auth
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring-shiro?useUnicode=true&characterEncoding=utf-8
+    username: upenv
+    password: upenv
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+logging:
+  level:
+    com.chsoft.aggr.business.dao : debug
+
