@@ -6,6 +6,7 @@ spring:
   application:
     name: april-gateway
 
+
 eureka:
   client:
     service-url:
@@ -14,4 +15,13 @@ eureka:
 logging:
   level:
     com.chsoft.aggr.gateway : debug
+
+zuul:
+  routes:
+    auth:
+      path: /april-auth/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: april-auth
+
+#  prefix: auth
 
