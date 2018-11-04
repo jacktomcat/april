@@ -11,7 +11,7 @@ import com.netflix.zuul.exception.ZuulException;
  */
 public class RouterFilter extends ZuulFilter {
 
-    
+
     @Override
     public String filterType() {
         return null;

@@ -12,7 +12,8 @@
         <module>april-eureka</module>
         <module>april-business</module>
         <module>april-auth</module>
-        <module>april-gateway</module>
+        <module>april-common</module>
+        <!--<module>april-gateway</module>-->
     </modules>
 
 
