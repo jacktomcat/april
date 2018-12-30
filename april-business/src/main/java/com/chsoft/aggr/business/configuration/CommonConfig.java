@@ -22,11 +22,4 @@ public class CommonConfig {
         return new Token();
     }
 
-    @Bean
-    public ScheduleService schedule(@Qualifier("tokenService") Token token, CommonService commonService) {
-        token.init();
-        commonService.commonInit();
-        return new ScheduleService();
-    }
-
 }
