@@ -13,8 +13,4 @@ public class Token {
     }
 
 
-    public void init(){
-        System.out.println("调用Token的init方法..........");
-    }
-
 }

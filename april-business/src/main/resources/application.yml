@@ -1,6 +1,21 @@
 server:
   port: 8010
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+app:
+  id: business-1000
+
+apollo:
+  meta: http://192.168.2.151:8080
+
+apollo:
+  cacheDir: /Users/zhuhuihui/idea-works/april
+
+env: DEV
 
 spring:
   application:
@@ -10,11 +25,6 @@ spring:
     url: jdbc:mysql://localhost:3306/spring-shiro?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 1q2w3e4R5T6Y**
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8001/eureka/
 
 
 mybatis:

@@ -1,7 +1,6 @@
 package com.chsoft.aggr.business.configuration;
 
-import com.chsoft.aggr.common.CommonService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
@@ -14,6 +13,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 
 @Configuration
+@EnableApolloConfig
 @ImportResource("classpath:spring-common.xml")
 public class CommonConfig {
 
