@@ -1,9 +1,11 @@
 package com.chsoft.aggr.business.configuration;
 
-import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.stereotype.Component;
 
 /**
  * ${DESCRIPTION}
@@ -13,13 +15,8 @@ import org.springframework.context.annotation.ImportResource;
  */
 
 @Configuration
-@EnableApolloConfig
 @ImportResource("classpath:spring-common.xml")
 public class CommonConfig {
 
-    @Bean("tokenService")
-    public Token token() {
-        return new Token();
-    }
 
 }

@@ -1,5 +1,6 @@
 package com.chsoft.aggr.business;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -14,6 +15,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @create 2018-08-12 下午4:17
  */
 @SpringBootApplication
+@EnableApolloConfig
 @EnableEurekaClient
 public class BusinessBootstrap {
 
