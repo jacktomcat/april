@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @create 2019-01-07 下午11:08
  */
 
-@ConditionalOnProperty(name= {"april.business.id","april.business.name"})
+//@ConditionalOnProperty(name= {"april.business.id"})
 @Component
 public class SpringBootApolloRefreshConfig {
 
@@ -31,16 +31,17 @@ public class SpringBootApolloRefreshConfig {
         boolean redisCacheKeysChanged = false;
         for (String changedKey : changeEvent.changedKeys()) {
             if (changedKey.startsWith("april.business")) {
-                redisCacheKeysChanged = true;
-                break;
+                //redisCacheKeysChanged = true;
+                //break;
             }
         }
-        if (!redisCacheKeysChanged) {
-            return;
-        }
+        //if (!redisCacheKeysChanged) {
+        //    return;
+       // }
 
         System.out.println("before refresh "+ token.toString());
         refreshScope.refresh("token");
+        refreshScope.refresh("properties");
         System.out.println("after refresh " + token.toString());
     }
 

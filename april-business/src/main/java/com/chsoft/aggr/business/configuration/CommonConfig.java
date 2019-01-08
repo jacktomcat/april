@@ -19,4 +19,19 @@ import org.springframework.stereotype.Component;
 public class CommonConfig {
 
 
+    @ConfigurationProperties(prefix = "april.business")
+    @RefreshScope
+    @Bean("token")
+    public Token token() {
+        return new Token();
+    }
+
+
+    @ConfigurationProperties(prefix = "gateway")
+    @RefreshScope
+    @Bean
+    public GatewayProperties properties() {
+        return new GatewayProperties();
+    }
+
 }

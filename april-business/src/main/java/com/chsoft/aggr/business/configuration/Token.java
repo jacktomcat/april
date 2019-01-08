@@ -11,9 +11,9 @@ import org.springframework.stereotype.Component;
  * @create 2018-11-04 下午8:16
  */
 
-@ConfigurationProperties(prefix = "april.business")
+/*@ConfigurationProperties(prefix = "april.business")
 @RefreshScope
-@Component("token")
+@Component("token")*/
 public class Token {
 
     private int id;
